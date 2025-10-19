@@ -1,0 +1,12 @@
+{
+  "id": 1,
+  "date": "2024-05-22T14:00:00",
+  "title": { "rendered": "Your Title Here" },
+  "content": { "rendered": "<p>Start writing your article content here. You can use <strong>HTML tags</strong> like paragraphs, bold text, lists, etc.</p><ul><li>List item 1</li><li>List item 2</li></ul>" },
+  "excerpt": { "rendered": "A short summary of your article that will appear on the main blog page." },
+  "featured_media": {
+    "source_url": "../../../placeholder.svg",
+    "alt_text": "A descriptive alt text for your image"
+  },
+  "categories": [{ "id": 1, "name": "General", "slug": "general" }]
+}
