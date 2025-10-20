@@ -15,7 +15,8 @@ interface NewsArticlePageProps {
 }
 
 export default async function NewsArticlePage({ params }: NewsArticlePageProps) {
-  const post = await getLocalPost("news", params.slug, "en")
+  const awaitedParams = await params
+  const post = await getLocalPost("news", awaitedParams.slug, "pl")
 
   if (!post) {
     notFound()

@@ -27,7 +27,7 @@ const teamMembers = [
 		id: "2",
 		nameEn: "Michał Krajka",
 		titleEn: "Chief Of Operations",
-		bioEn: "", // Bio text
+		bioEn: "Michał brings comprehensive professional knowledge and advanced project expertise. If needed, please feel free to get in touch for valuable consultation on ideas and a problem-solving attitude. Michał will explain what we can do, when the tasks can be done, and what the budget expectations are.", // Bio text
 		image: "/teamMembers/Michał Krajka.png",
 		roleEn: "Design & Operations",
 		email: "krajka@rttechnik.com",
@@ -37,7 +37,7 @@ const teamMembers = [
 		id: "6", // Keeping original ID for consistency if needed
 		nameEn: "Joanna Kavu",
 		titleEn: "Business Development Manager",
-		bioEn: "", // Bio text
+		bioEn: "Joanna is responsible for business development and strategic partnerships. She focuses on expanding our market reach and fostering strong client relationships.", // Bio text
 		image: "/placeholder-user.jpg",
 		roleEn: "Administration & Development",
 		email: "kavu@rttechnik.com",
@@ -102,19 +102,19 @@ export default function TeamPage() {
           <div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 max-w-7xl mx-auto">
               {/* Column 1: Michał Krajka */}
-              <div className="flex flex-col items-stretch text-center">
+              <div className="flex flex-col text-center">
                 <div className="relative inline-block mb-8">
                   <h3 className="text-3xl font-bold">{michal.roleEn}</h3>
                   <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-2/3 h-1 bg-amber-400 rounded-full" />
                 </div>
-                <Card key={michal.id} className="flex-grow overflow-hidden w-full bg-white dark:bg-gray-900 shadow-lg rounded-xl transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-2">
+                <Card key={michal.id} className="overflow-hidden w-full bg-white dark:bg-gray-900 shadow-lg rounded-xl transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-2">
                   <CardContent className="p-0 h-full flex flex-col">
-                    <div className="relative h-[32rem] w-full">
+                    <div className="relative h-[36rem] w-full">
                       <Image
                         src={michal.image || "/placeholder-user.svg"}
                         alt={michal.nameEn}
                         fill
-                        className="object-cover object-top"
+                        className="object-cover object-center"
                       />
                     </div>
                     <div className="p-6 flex-grow flex flex-col justify-center">
@@ -137,19 +137,19 @@ export default function TeamPage() {
               </div>
 
               {/* Column 2: Joanna Kavu */}
-              <div className="flex flex-col items-stretch text-center">
+              <div className="flex flex-col text-center">
                 <div className="relative inline-block mb-8">
                   <h3 className="text-3xl font-bold">{joanna.roleEn}</h3>
                   <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-2/3 h-1 bg-amber-400 rounded-full" />
                 </div>
-                <Card key={joanna.id} className="flex-grow overflow-hidden w-full bg-white dark:bg-gray-900 shadow-lg rounded-xl transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-2">
+                <Card key={joanna.id} className="overflow-hidden w-full bg-white dark:bg-gray-900 shadow-lg rounded-xl transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-2">
                   <CardContent className="p-0 h-full flex flex-col">
-                    <div className="relative h-[32rem] w-full">
+                    <div className="relative h-[36rem] w-full">
                       <Image
                         src={joanna.image || "/placeholder-user.svg"}
                         alt={joanna.nameEn}
                         fill
-                        className="object-cover object-top"
+                        className="object-cover object-center"
                       />
                     </div>
                     <div className="p-6 flex-grow flex flex-col justify-center">

@@ -27,7 +27,7 @@ const teamMembers = [
 		id: "2",
 		namePl: "Michał Krajka",
 		titlePl: "Dyrektor Operacyjny",
-		bioPl: "", // Bio text
+		bioPl: "Michał wnosi wszechstronną wiedzę zawodową i zaawansowane doświadczenie projektowe. W razie potrzeby, prosimy o kontakt w celu uzyskania cennych konsultacji, pomysłów i podejścia zorientowanego na rozwiązywanie problemów. Michał wyjaśni, co możemy zrobić, kiedy zadania mogą być wykonane i jakie są oczekiwania budżetowe.",
 		image: "/teamMembers/Michał Krajka.png",
 		rolePl: "Projektowanie i Operacje",
 		email: "krajka@rttechnik.com",
@@ -37,7 +37,7 @@ const teamMembers = [
 		id: "6", // Keeping original ID
 		namePl: "Joanna Kavu",
 		titlePl: "Business Development Manager",
-		bioPl: "", // Bio text
+		bioPl: "Joanna jest odpowiedzialna za rozwój biznesu i partnerstwa strategiczne. Skupia się na poszerzaniu naszego zasięgu rynkowego i budowaniu silnych relacji z klientami.",
 		image: "/placeholder-user.jpg", // Using .jpg to be consistent with EN version
 		rolePl: "Administracja i Rozwój",
 		email: "kavu@rttechnik.com",
@@ -102,19 +102,19 @@ export default function TeamPagePL() {
 					<div>
 						<div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 max-w-7xl mx-auto">
 							{/* Column 1: Michał Krajka */}
-							<div className="flex flex-col items-stretch text-center">
+							<div className="flex flex-col text-center">
 								<div className="relative inline-block mb-8">
 									<h3 className="text-3xl font-bold">{michal.rolePl}</h3>
 									<div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-2/3 h-1 bg-amber-400 rounded-full" />
 								</div>
-								<Card key={michal.id} className="flex-grow overflow-hidden w-full bg-white dark:bg-gray-900 shadow-lg rounded-xl transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-2">
+								<Card key={michal.id} className="overflow-hidden w-full bg-white dark:bg-gray-900 shadow-lg rounded-xl transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-2">
 									<CardContent className="p-0 h-full flex flex-col">
-										<div className="relative h-[32rem] w-full">
+										<div className="relative h-[36rem] w-full">
 											<Image
 												src={michal.image || "/placeholder-user.svg"}
 												alt={michal.namePl}
 												fill
-												className="object-cover object-top"
+												className="object-cover object-center"
 											/>
 										</div>
 										<div className="p-6 flex-grow flex flex-col justify-center">
@@ -137,19 +137,19 @@ export default function TeamPagePL() {
 							</div>
 
 							{/* Column 2: Joanna Kavu */}
-							<div className="flex flex-col items-stretch text-center">
+							<div className="flex flex-col text-center">
 								<div className="relative inline-block mb-8">
 									<h3 className="text-3xl font-bold">{joanna.rolePl}</h3>
 									<div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-2/3 h-1 bg-amber-400 rounded-full" />
 								</div>
-								<Card key={joanna.id} className="flex-grow overflow-hidden w-full bg-white dark:bg-gray-900 shadow-lg rounded-xl transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-2">
+								<Card key={joanna.id} className="overflow-hidden w-full bg-white dark:bg-gray-900 shadow-lg rounded-xl transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-2">
 									<CardContent className="p-0 h-full flex flex-col">
-										<div className="relative h-[32rem] w-full">
+										<div className="relative h-[36rem] w-full">
 											<Image
 												src={joanna.image || "/placeholder-user.svg"}
 												alt={joanna.namePl}
 												fill
-												className="object-cover object-top"
+												className="object-cover object-center"
 											/>
 										</div>
 										<div className="p-6 flex-grow flex flex-col justify-center">
