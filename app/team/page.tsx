@@ -37,7 +37,7 @@ const teamMembers = [
 		id: "6", // Keeping original ID for consistency if needed
 		nameEn: "Joanna Kavu",
 		titleEn: "Business Development Manager",
-		bioEn: "Joanna is responsible for business development and strategic partnerships. She focuses on expanding our market reach and fostering strong client relationships.", // Bio text
+		bioEn: "With all other concerns contact Joanna.", // Bio text
 		image: "/placeholder-user.jpg",
 		roleEn: "Administration & Development",
 		email: "kavu@rttechnik.com",
