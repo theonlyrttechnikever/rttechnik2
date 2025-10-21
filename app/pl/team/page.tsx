@@ -37,7 +37,7 @@ const teamMembers = [
 		id: "6", // Keeping original ID
 		namePl: "Joanna Kavu",
 		titlePl: "Business Development Manager",
-		bioPl: "Joanna jest odpowiedzialna za rozwój biznesu i partnerstwa strategiczne. Skupia się na poszerzaniu naszego zasięgu rynkowego i budowaniu silnych relacji z klientami.",
+		bioPl: "Ze wszystkimi innymi sprawami prosimy o kontakt z Joanną.",
 		image: "/placeholder-user.jpg", // Using .jpg to be consistent with EN version
 		rolePl: "Administracja i Rozwój",
 		email: "kavu@rttechnik.com",
