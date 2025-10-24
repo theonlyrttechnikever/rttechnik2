@@ -15,7 +15,7 @@ export default function AboutPage() {
             <Badge className="mb-4">About Us</Badge>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Decades of Excellence in Clean Room Solutions</h1>
             <p className="text-lg text-muted-foreground mb-8">
-              RTTechnik has been at the forefront of clean room technology for over 25 years, delivering exceptional
+              RTTechnik has been at the forefront of clean room technology for over 30 years, delivering exceptional
               quality and innovative solutions.
             </p>
           </div>
@@ -37,22 +37,32 @@ export default function AboutPage() {
 
             <div>
               <Badge className="mb-4">Our Story</Badge>
-              <h2 className="text-4xl font-bold mb-8">Over 20 Years of Expertise</h2>
+              <h2 className="text-4xl font-bold mb-8">Over 30 Years of Expertise</h2>
               <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                RTTechnik Zach GmbH sp.k. is a company with over 20 years of experience in designing and constructing
+                RTTechnik Sp. z o.o. is a company with over 30 years of experience in designing and constructing
                 cleanroom environments for the pharmaceutical, medical device, and biotechnology industries.
               </p>
-              <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              <p className="text-muted-foreground text-lg leading-relaxed">
                 Our experienced project managers oversee the coordination of specialized teams, ensuring that each
                 project is executed professionally and tailored to meet individual client requirements.
               </p>
-              <p className="text-muted-foreground text-lg leading-relaxed">
-                <strong className="font-semibold text-foreground">Our customers:</strong> GlaxoSmithKline / Aesculap Chifa – B.Braun / Biofarm / Curtis Health
-                Caps / Gerresheimer Bolesławiec / Lina Medical / Kimball Electronics / Valeant / ICN Polfa Rzeszów /
-                Jelfa / Darnits, Kiev / Borshchahivskiy Chemical Pharmaceutical Plant, Kiev / Otapharma, Wien / Austrian
-                Aerospace / Avantor
-              </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Customers Section */}
+      <section className="py-16 bg-muted">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <Badge className="mb-4">Our Valued Partners</Badge>
+            <h2 className="text-3xl font-bold mb-6">Trusted by Industry Leaders</h2>
+            <p className="text-lg text-muted-foreground mb-8">
+              We are proud to have worked with a diverse range of prestigious clients across the pharmaceutical, medical, and technology sectors:
+            </p>
+            <p className="text-muted-foreground leading-relaxed">
+              GlaxoSmithKline / Aesculap Chifa – B.Braun / Biofarm / Curtis Health Caps / Gerresheimer Bolesławiec / Lina Medical / Kimball Electronics / Valeant / ICN Polfa Rzeszów / Jelfa / Darnits, Kiev / Borshchahivskiy Chemical Pharmaceutical Plant, Kiev / Otapharma, Wien / Austrian Aerospace / Avantor
+            </p>
           </div>
         </div>
       </section>
@@ -90,7 +100,7 @@ export default function AboutPage() {
               <div className="flex justify-center mb-4">
                 <Clock className="h-10 w-10 text-primary" />
               </div>
-              <div className="text-4xl font-bold mb-2 animate-count" data-count="25">25+</div>
+              <div className="text-4xl font-bold mb-2 animate-count" data-count="30">30+</div>
               <p className="text-muted-foreground">Years of Experience</p>
             </div>
 

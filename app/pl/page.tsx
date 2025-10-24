@@ -37,7 +37,7 @@ export default async function Home() {
               Liderzy Branży
             </Badge>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-              RTTechnik - TECHNOLOGIA CLEANROOM
+              RTTechnik - Technologia Pomieszczeń Czystych
             </h1>
             <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl">
               Wiodący ekspert w projektowaniu i budowie wysokowydajnych środowisk cleanroom. Dzięki wieloletniemu

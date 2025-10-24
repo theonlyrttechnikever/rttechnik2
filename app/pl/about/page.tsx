@@ -17,7 +17,7 @@ export default function AboutPage() {
               Dekady Doskonałości w Rozwiązaniach Pomieszczeń Czystych
             </h1>
             <p className="text-lg text-muted-foreground mb-8">
-              RTTechnik jest liderem w technologii pomieszczeń czystych od ponad 25 lat, dostarczając wyjątkową jakość i
+              RTTechnik jest liderem w technologii pomieszczeń czystych od ponad 30 lat, dostarczając wyjątkową jakość i
               innowacyjne rozwiązania.
             </p>
           </div>
@@ -39,26 +39,37 @@ export default function AboutPage() {
 
             <div>
               <Badge className="mb-4">Nasza Historia</Badge>
-              <h2 className="text-4xl font-bold mb-8">Ponad 20 lat doświadczenia</h2>
+              <h2 className="text-4xl font-bold mb-8">Ponad 30 lat doświadczenia</h2>
               <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                RTTechnik Zach GmbH sp.k. jest firmą posiadającą ponad 20-letnie doświadczenie z zakresu projektowania
+                RTTechnik Zach GmbH sp.k. jest firmą posiadającą ponad 30-letnie doświadczenie z zakresu projektowania
                 oraz budowania pomieszczeń czystych typu cleanroom dla branży farmaceutycznej, aparatury medycznej, czy
                 biotechnologicznej.
               </p>
-              <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              <p className="text-muted-foreground text-lg leading-relaxed">
                 Doświadczeni kierownicy projektów pracujący przy realizacji inwestycji koordynują zespoły specjalistów,
                 zapewniając przy tym profesjonalne spełnienie wymagań każdego projektu w sposób indywidualny.
-              </p>
-              <p className="text-muted-foreground text-lg leading-relaxed">
-                <strong className="font-semibold text-foreground">Nasi klienci:</strong> GlaxoSmithKline / Aesculap Chifa – B.Braun / Biofarm / Curtis Health Caps
-                / Gerresheimer Bolesławiec / Lina Medical / Kimball Electronics / Valeant / ICN Polfa Rzeszów / Jelfa /
-                Darnits, Kiev / Borshchahivskiy Chemical Pharmaceutical Plant, Kiev / Otapharma, Wien / Austrian
-                Aerospace / Avantor
               </p>
             </div>
           </div>
         </div>
       </section>
+
+      {/* Our Customers Section */}
+      <section className="py-16 bg-muted">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <Badge className="mb-4">Nasi Cenni Partnerzy</Badge>
+            <h2 className="text-3xl font-bold mb-6">Zaufali Nam Liderzy Branży</h2>
+            <p className="text-lg text-muted-foreground mb-8">
+              Jesteśmy dumni ze współpracy z szerokim gronem prestiżowych klientów z sektora farmaceutycznego, medycznego i technologicznego:
+            </p>
+            <p className="text-muted-foreground leading-relaxed">
+              GlaxoSmithKline / Aesculap Chifa – B.Braun / Biofarm / Curtis Health Caps / Gerresheimer Bolesławiec / Lina Medical / Kimball Electronics / Valeant / ICN Polfa Rzeszów / Jelfa / Darnits, Kiev / Borshchahivskiy Chemical Pharmaceutical Plant, Kiev / Otapharma, Wien / Austrian Aerospace / Avantor
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Stats Section */}
       <section className="py-16">
         <div className="container mx-auto px-4">
@@ -96,8 +107,8 @@ export default function AboutPage() {
               <div className="flex justify-center mb-4">
                 <Clock className="h-10 w-10 text-primary" />
               </div>
-              <div className="text-4xl font-bold mb-2 animate-count" data-count="25">
-                25+
+              <div className="text-4xl font-bold mb-2 animate-count" data-count="30">
+                30+
               </div>
               <p className="text-muted-foreground">Lat Doświadczenia</p>
             </div>

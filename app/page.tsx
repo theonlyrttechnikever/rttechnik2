@@ -37,7 +37,7 @@ export default async function Home() {
               Industry Leaders
             </Badge>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-              RTTechnik - CLEANROOM TECHNOLOGY
+              RTTechnik - Cleanroom Technology
             </h1>
             <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl">
               Leading expert in the design and construction of high-performance cleanroom environments. With years of

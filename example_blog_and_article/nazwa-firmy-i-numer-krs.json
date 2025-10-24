@@ -1,0 +1,12 @@
+{
+  "id": 1,
+  "date": "2025-10-08T10:00:00",
+  "title": { "rendered": "Zmiana numeru KRS i nazwy firmy" },
+  "content": { "rendered": "<p>Informujemy, że w dniu dzisiejszym zmianie uległa nazwa firmy i numer KRS.</p><p>Firma RTTechnik Zach GmbH sp. k. przekształcona została decyzją Sądu w RTTechnik sp. z o.o. z numerem KRS 0001191612. Poniżej oficjalna informacja.</p>" },
+  "excerpt": { "rendered": "Informujemy, że w dniu dzisiejszym zmianie uległa nazwa firmy i numer KRS." },
+  "featured_media": {
+    "source_url": "../../../placeholder.svg",
+    "alt_text": "Zmiana numeru KRS i nazwy firmy"
+  },
+  "categories": [{ "id": 1, "name": "Ważne", "slug": "important" }]
+}
