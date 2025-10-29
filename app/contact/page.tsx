@@ -29,7 +29,7 @@ export default function ContactPage() {
                   <div>
                     <p className="font-semibold text-2xl">Address</p>
                     <p className="text-muted-foreground">
-                      RTTechnik Sp. z o.o.
+                      RTTechnik sp. z o.o.
                       <br />
                       ul. Ziębicka 35/116, Poznań 60-164, Poland
                     </p>

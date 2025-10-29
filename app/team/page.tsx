@@ -38,7 +38,7 @@ const teamMembers = [
 		nameEn: "Joanna Kavu",
 		titleEn: "Business Development Manager",
 		bioEn: "With all other concerns contact Joanna.", // Bio text
-		image: "/placeholder-user.jpg",
+		image: "/teamMembers/Joanna Kavu.png",
 		roleEn: "Administration & Development",
 		email: "kavu@rttechnik.com",
 		phone: "+48 602 118 553",

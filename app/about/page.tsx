@@ -39,7 +39,7 @@ export default function AboutPage() {
               <Badge className="mb-4">Our Story</Badge>
               <h2 className="text-4xl font-bold mb-8">Over 30 Years of Expertise</h2>
               <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                RTTechnik Sp. z o.o. is a company with over 30 years of experience in designing and constructing
+                RTTechnik sp. z o.o. is a company with over 30 years of experience in designing and constructing
                 cleanroom environments for the pharmaceutical, medical device, and biotechnology industries.
               </p>
               <p className="text-muted-foreground text-lg leading-relaxed">

@@ -74,7 +74,7 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">{isPolish ? "Kontakt" : "Contact"}</h3>
             <div className="space-y-2 text-gray-300">
-              <p>RTTechnik Sp. z o.o.</p>
+              <p>RTTechnik sp. z o.o.</p>
               <p>ul. Ziębicka 35/116</p>
               <p>Poznań 60-164</p>
               <p>Tel: +48 61 670 78 58</p>

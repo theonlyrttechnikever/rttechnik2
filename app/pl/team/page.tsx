@@ -19,9 +19,11 @@ const teamMembers = [
 	{
 		id: "1",
 		namePl: "Bernhard Zach",
-		titlePl: "CEO i Właściciel",
+		titlePl: "Prezes Zarządu",
 		bioPl: "Z ponad dwudziestoletnim doświadczeniem w branży, Bernhard Zach prowadzi RTTechnik z wizją innowacji i doskonałości. Jego przywództwo jest kluczem do naszego sukcesu w dostarczaniu najnowocześniejszych rozwiązań dla pomieszczeń czystych.",
 		image: "/teamMembers/Bernhard Zach.png",
+		email: "zach@rttechnik.com",
+		phone: "+ 48 604 77 60 66 / + 43 664 25 36 083",
 	},
 	{
 		id: "2",
@@ -38,7 +40,7 @@ const teamMembers = [
 		namePl: "Joanna Kavu",
 		titlePl: "Business Development Manager",
 		bioPl: "Ze wszystkimi innymi sprawami prosimy o kontakt z Joanną.",
-		image: "/placeholder-user.jpg", // Using .jpg to be consistent with EN version
+		image: "/teamMembers/Joanna Kavu.png",
 		rolePl: "Administracja i Rozwój",
 		email: "kavu@rttechnik.com",
 		phone: "+48 602 118 553",

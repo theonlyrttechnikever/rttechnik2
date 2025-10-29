@@ -41,7 +41,7 @@ export default function AboutPage() {
               <Badge className="mb-4">Nasza Historia</Badge>
               <h2 className="text-4xl font-bold mb-8">Ponad 30 lat doświadczenia</h2>
               <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                RTTechnik Zach GmbH sp.k. jest firmą posiadającą ponad 30-letnie doświadczenie z zakresu projektowania
+                RTTechnik sp. z o.o. jest firmą posiadającą ponad 30-letnie doświadczenie z zakresu projektowania
                 oraz budowania pomieszczeń czystych typu cleanroom dla branży farmaceutycznej, aparatury medycznej, czy
                 biotechnologicznej.
               </p>
