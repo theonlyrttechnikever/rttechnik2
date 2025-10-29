@@ -2,8 +2,8 @@ import { NextResponse } from 'next/server'
 import { createHash } from 'crypto'
 import { teamMembers, TeamMember } from '@/app/team'
 
-// Should be stored in .env file
-const API_SECRET = 'your-secret-key-here'
+// Explicitly set the runtime to Node.js
+export const runtime = 'nodejs';
 
 function generateCardHash(id: string, email: string): string {
   return createHash('sha256')
@@ -12,17 +12,8 @@ function generateCardHash(id: string, email: string): string {
     .substring(0, 12)
 }
 
-export async function POST(request: Request) {
+export async function GET(request: Request) {
   try {
-    const { secret } = await request.json()
-
-    if (secret !== API_SECRET) {
-      return new NextResponse(JSON.stringify({ error: 'Unauthorized' }), {
-        status: 401,
-        headers: { 'Content-Type': 'application/json' }
-      })
-    }
-
     const cardUrls = teamMembers.map((member: TeamMember) => ({
       name: member.namePl,
       title: member.titlePl, 
@@ -33,8 +24,9 @@ export async function POST(request: Request) {
       status: 200,
       headers: { 'Content-Type': 'application/json' }
     })
-  } catch (error) {
-    return new NextResponse(JSON.stringify({ error: 'Internal Server Error' }), {
+  } catch (error: any) {
+    console.error("API Route Error:", error); // Log the full error to your server logs
+    return new NextResponse(JSON.stringify({ error: 'Internal Server Error', details: error.message }), {
       status: 500,
       headers: { 'Content-Type': 'application/json' }
     })
