@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server'
 import { createHash } from 'crypto'
+import { teamMembers, TeamMember } from '@/app/team'
 
 // Should be stored in .env file
 const API_SECRET = 'your-secret-key-here'
@@ -22,13 +23,9 @@ export async function POST(request: Request) {
       })
     }
 
-    const teamMembers = [
-      // ...existing team members array from team/page.tsx...
-    ]
-
-    const cardUrls = teamMembers.map(member => ({
+    const cardUrls = teamMembers.map((member: TeamMember) => ({
       name: member.namePl,
-      title: member.titlePl,
+      title: member.titlePl, 
       url: `/pl/team/${generateCardHash(member.id, member.email || '')}`
     }))
 

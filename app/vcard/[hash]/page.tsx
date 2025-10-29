@@ -3,18 +3,10 @@
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { Card } from '@/components/ui/card'
-import QRCode from 'qrcode.react'
+import { QRCodeCanvas } from 'qrcode.react'
 import { notFound } from 'next/navigation'
 import { createHash } from 'crypto'
-
-interface TeamMember {
-  id: string
-  namePl: string
-  titlePl: string
-  email?: string
-  phone?: string
-  image: string
-}
+import { teamMembers, TeamMember } from '@/app/team'
 
 function generateHash(data: string): string {
   return createHash('sha256').update(data).digest('hex').substring(0, 12)
@@ -22,10 +14,9 @@ function generateHash(data: string): string {
 
 export default function BusinessCard({ params }: { params: { hash: string } }) {
   const [member, setMember] = useState<TeamMember | null>(null)
+  const [vCardUrl, setVCardUrl] = useState<string>('')
 
   useEffect(() => {
-    // This would typically be an API call
-    const teamMembers = [/* Copy team members array from team page */]
     const foundMember = teamMembers.find(m => 
       generateHash(`${m.id}-${m.email}`) === params.hash
     )
@@ -33,7 +24,7 @@ export default function BusinessCard({ params }: { params: { hash: string } }) {
   }, [params.hash])
 
   if (!member) return notFound()
-
+  
   const vCardData = `BEGIN:VCARD
 VERSION:3.0
 FN:${member.namePl}
@@ -41,7 +32,10 @@ TITLE:${member.titlePl}
 EMAIL:${member.email}
 TEL:${member.phone}
 ORG:RTTechnik
-END:VCARD`
+PHOTO;TYPE=JPEG;ENCODING=BASE64:${member.image}
+END:VCARD`;
+
+  const vCardBlob = new Blob([vCardData], { type: 'text/vcard' });
 
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-gray-950 p-8 flex items-center justify-center">
@@ -63,8 +57,8 @@ END:VCARD`
         </div>
 
         <div className="flex justify-center pt-6">
-          <QRCode
-            value={vCardData}
+          <QRCodeCanvas
+            value={URL.createObjectURL(vCardBlob)}
             size={200}
             level="H"
             imageSettings={{
